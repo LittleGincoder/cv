@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+
+}
+
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+
+}
+
+
+
+.s1 {
+  background-color: aquamarine;
+  height: 600px;
+;
+}
+
+h1 {
+  color: red;
+}
+
+
+
+h2 {
+  font-size: 20px;
+  font-family: serif;
+  color: rgb(11, 46, 244);
+}
+
+h3 {
+  color: blueviolet;
+}
+
+.takagi{
+position: relative;
+  height: 200px;
+  top: 60px;right: 200px;
+
+}
+.gin{
+  height: 200px;
+  position: relative;
+ left: 200px;
+ bottom: 140px;
+}
+.s2 {
+  height: 250px;
+
+}
+
+.artificial {
+  height: 300px;
+}
+
+
+.profile {
+  background-color: rgb(229, 255, 0);
+}
+
+.skills {
+
+  background-color: rgb(43, 226, 89);
+}
+
+.contact-me {
+
+  background-color: rgb(245, 220, 240);
+
+}
+
+
+.skill-row{
+width: 50%;
+margin: 100px auto 100px auto;
+text-align: left;
+
+}
+
+p{
+  line-height: 2;
+}
+
+.info{
+width: 30%;
+margin: auto;
+line-height: 1.5;
+}
+
+
+
+.buttonClass {
+  font-size:15px;
+  font-family:Arial;
+  width:140px;
+  height:50px;
+  border-width:1px;
+  color:#fff;
+  border-color:#0b0e07;
+  border-top-left-radius:3px;
+  border-top-right-radius:3px;
+  border-bottom-left-radius:3px;
+  border-bottom-right-radius:3px;
+  box-shadow:inset 0px -3px 7px 0px #29bbff;
+  text-shadow:inset 0px 1px 0px #263666;
+  background:linear-gradient(#2dabf9, #0688fa);
+}
+
+.buttonClass:hover {
+  background: linear-gradient(#0688fa, #2dabf9);
+}
+                       
+
+.footer{
+  background-color: #06a5a5;
+  padding: 20px;
+}
+
+a{
+color: #0638a5;
+font-family: sans-serif;
+margin: 10px 20px;
+text-decoration: none;
+
+}
+
+a:hover{
+  color: #fa0606;
+}
+
+.copyright{
+font-size: 12px;
+padding: 20px;
+}
