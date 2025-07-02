@@ -7,7 +7,6 @@ body {
   text-align: center;
   font-family: sans-serif;
   line-height: 1.6;
-  padding: 0;
   background-color: #f9f9f9;
 }
 
@@ -18,7 +17,6 @@ img {
   margin: 0 auto;
 }
 
-/* Section 1 */
 .s1 {
   background-color: aquamarine;
   padding: 40px 20px;
@@ -39,23 +37,21 @@ h3 {
   color: blueviolet;
 }
 
-/* Takagi + Gin images */
-.takagi, .gin {
+.takagi,
+.gin {
   width: 150px;
-  height: auto;
   margin: 20px auto;
-  display: inline-block;
+  display: block;
 }
 
-/* Profile image */
 .artificial {
   width: 200px;
-  height: auto;
   margin-top: 20px;
 }
 
-/* Sections */
-.profile, .skills, .contact-me {
+.profile,
+.skills,
+.contact-me {
   padding: 40px 20px;
 }
 
@@ -71,41 +67,40 @@ h3 {
   background-color: #f5dcf0;
 }
 
-/* Skill Rows */
 .skill-row {
-  max-width: 800px;
-  margin: 50px auto;
-  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: white;
   padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  border-radius: 12px;
 }
 
 .skill-row img {
-  float: left;
-  width: 120px;
+  width: 140px;
   height: auto;
-  margin-right: 20px;
+  border-radius: 10px;
 }
 
-.skill-row::after {
-  content: "";
-  display: block;
-  clear: both;
+.skill-row .text {
+  max-width: 500px;
+  text-align: left;
 }
 
 p {
   margin: 10px 0;
 }
 
-/* Info block */
 .info {
-  max-width: 600px;
+  max-width: 700px;
   margin: auto;
+  padding: 20px;
 }
 
-/* Button */
 .buttonClass {
   font-size: 15px;
   font-family: Arial;
@@ -126,7 +121,6 @@ p {
   background: linear-gradient(#0688fa, #2dabf9);
 }
 
-/* Footer */
 .footer {
   background-color: #06a5a5;
   padding: 20px;
@@ -147,19 +141,19 @@ p {
   padding-top: 10px;
 }
 
-/* Media Queries */
+/* Responsive Fix */
 @media (max-width: 768px) {
   .skill-row {
+    flex-direction: column;
     text-align: center;
   }
 
   .skill-row img {
-    float: none;
-    margin: 0 auto 15px;
-    display: block;
+    margin-bottom: 15px;
   }
-}
 
-.s2{
-  background-color: white;
+  .gin,
+  .takagi {
+    width: 120px;
+  }
 }
